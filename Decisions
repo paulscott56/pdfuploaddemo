@@ -1,0 +1,8 @@
+Engineering decisions
+---
+
+* A multi user format, so as to separate different users uploads. This may or may not be used, as the default user is a shared directory
+* Storage of upload metadata in a database (MongoDB). This will allow more efficient per user search and other functions
+* Configurable Storage volume, this can then be set as a docker shared (NFS) storage volume if needs be
+* Simple Web UI, as well as a pure API controller. Not all clients (e.g. Mobile) will use the web UI, some may prefer file management via REST
+* JUnit 5 - Gives more clarity on the tests, and test types.
